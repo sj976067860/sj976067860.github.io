@@ -1,13 +1,20 @@
 .header
 {
 background-color: #aaccbb;
+height: 50px;
+text-align:center;
 }
 .main{
-background-color: #999
+background-color: #ab7;
+height: 273px;
 }
 .sidebar{
-background-color: #7a7
+background-color: #7a7;
+text-align:center;
 }
 .footer{
-background-color: #0abcde
+background-color:black;
+text-align:center;
+color: white;
 }
+#kchen{color:red}
