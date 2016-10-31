@@ -1,27 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
+
 <head>
-    <meta charset="utf-8" />
-    <title>Cyber Orb demo</title>
-    <style> body { margin: 0; background: #333; } </style>
-    <script src="src/phaser-arcade-physics.2.2.2.min.js"></script>
-    <script src="src/Boot.js"></script>
-    <script src="src/Preloader.js"></script>
-    <script src="src/MainMenu.js"></script>
-    <script src="src/Howto.js"></script>
-    <script src="src/Game.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Web程式设计期中报告</title>
+    <link href="pong.css" media="screen, print" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/my.css">
+     <link rel="stylesheet" href="./css/160926.css">
 </head>
+
 <body>
-<script>
-(function() {
-    var game = new Phaser.Game(320, 480, Phaser.CANVAS, 'game');
-    game.state.add('Boot', Ball.Boot);
-    game.state.add('Preloader', Ball.Preloader);
-    game.state.add('MainMenu', Ball.MainMenu);
-    game.state.add('Howto', Ball.Howto);
-    game.state.add('Game', Ball.Game);
-    game.state.start('Boot');
-})();
-</script>
+
+    <!-- 導覽例-->
+    <div class="navbar-header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-full navbar-fixed-top navbar-dark bg-inverse bg-faded">
+
+                <div class="container">
+                    <a class="navbar-brand m-b-0" href="#">Home</a>
+
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <div class="btn-group">
+                                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Interesting</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="./gebulin.html">Game</a>
+
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">D</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav pull-md-right">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+ <div class="container">
+        <div class="col-md-9">
+      <div class="row">
+        <div class="container col-md-12">
+     <!--  travel-->      
+    <center> <h1>旅游日志</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+            <p>台北101（TAIPEI 101[2]）是位于台湾台北市信义区的摩天大楼，楼高509.2米（1,671英尺），地上楼层共有101层、另有地下5层，总楼地板面积37万4千平方米，由李祖原联合建筑师事务所设计、KTRT联合团队建造，于1999年动工，2004年12月31日完工启用；最初名称为台北国际金融中心（Taipei World Financial Center），2003年改为现名，亦俗称为101大楼[3]。兴建与经营机构为台北金融大楼公司。其为台湾第一高楼，曾于2004年12月31日至2010年1月4日间拥有世界第一高楼的纪录，目前为世界第9高楼[2]，同时也是全球最高绿建筑及环地震带最高建筑物，完工以来即成为台北重要地标之一。此外，大楼内拥有全球最大的阻尼器、以及全球起降速度次快的电梯（仅次于东京晴空塔）。</p>
+        </div>
+        <div class="col-md-3">
+            <img class="img-thumbnail" src=".\images\01.jpg">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+            <img class="img-thumbnail" src=".\images\02.jpg" >
+        </div>
+        <div class="col-md-8">
+            <p>台北市议会是中华民国中央政府所在地及直辖市台北市的最高立法机关，也是全市首要的民意机关。过去最早的议会场所，是使用现今的台北市中山堂开会。民国53年（1964年），台北市议会迁至中山南北路与忠孝东西路口的市议会大楼（台北市中正区忠孝西路一段2号），至此台北市议会才正式拥有独立的会议及办公场所；该大楼后来改由台北市政府警察局中正第一分局使用，2007年中正第一分局迁离，洪致文等文史工作者向台北市政府争取原地保留该大楼但未成，2016年2月2日至2016年4月9日该大楼被拆除。
+1990年，台北市议会再迁移至位于台北东区逸仙路与仁爱路四段交界处的市议会新厦（台北市信义区仁爱路四段507号），与台北市市政大楼为邻。</p>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar col-md-3">
+    <div class="sidebar-module">
+        <h3>About me </h3>
+<img class="img-circle" src="https://unsplash.it/100/?random&6">
+<br>
+其实没啥好介绍，<br> 
+那我随便说两句。<br>
+于是念了两句诗，<br>
+苟利国家生死以，<br>
+岂因祸福避趋之？<br>
+这是林则徐的诗。<br>
+林则徐是福州人，<br>
+我也是个福州人。<br>
+我学电子信息的，<br> 
+啥破专业这么难。<br>
+脱下长日的假面，<br>
+奔向梦幻的疆界。<br>
+南瓜马车的午夜，<br>
+换上童话玻璃鞋。<br>
+让我享受这感觉，<br>
+我是孤傲的蔷薇。<br>
+让我品尝这滋味，<br>
+纷乱世界不了解。<br>
+        <hr>
+            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=lvDa3r1pNuE" role="button">拥抱</a>
+    </div>
+    </div>
+    </div>
+   
+  
+    <div class="footer">
+        <div class="container">
+            &copy; 2016 ashin@MCU
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/js006.js"></script>
+
 </body>
+
 </html>
